@@ -1,11 +1,413 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kahvila Dois Amores — Website | Catarina Kaucher</title>
+    <meta
+      name="description"
+      content="A café identity and ordering-request flow, from concept through WordPress implementation."
+    />
+    <link rel="icon" type="image/x-icon" href="../img/CK.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Josefin+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-inner">
+        <a class="logo" href="../index.html">CK</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav>
+          <ul id="navList">
+            <li><a href="../index.html#about">About</a></li>
+            <li class="has-dropdown">
+              <a href="../index.html#projects" class="dropdown-toggle"
+                >Projects <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="dashtera-blog.html">Dashtera — Blog Design</a></li>
+                <li><a href="doisamores.html">Kahvila Dois Amores</a></li>
+              </ul>
+            </li>
+            <li><a href="../index.html#tools">Tools</a></li>
+            <li><a href="../index.html#testimonials">Testimonials</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <div class="case-hero-wrap">
+          <div class="hero-wave-bg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path
+                fill="rgb(254,220,232)"
+                fill-opacity="0.3"
+                d="M0,256L48,240C96,224,192,192,288,202.7C384,213,480,267,576,256C672,245,768,171,864,154.7C960,139,1056,181,1152,181.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="article-header wrap">
+            <h1>Kahvila Dois Amores — Website</h1>
+          </div>
+
+          <div class="case-hero">
+            <picture>
+              <source
+                media="(max-width: 400px)"
+                srcset="../img/doisamores-project-mobile.png"
+              />
+              <img
+                src="../img/project-image-card3.png"
+                alt="Kahvila Dois Amores website preview"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="case-content">
+          <div class="modal-meta-row">
+            <div class="modal-tags">
+              <span class="pill">Web Development</span>
+              <span class="pill">UI/UX Design</span>
+              <span class="pill">WordPress</span>
+              <span class="pill">Responsive Web Design</span>
+            </div>
+            <div class="modal-side">
+              <div>Client<strong>Dois Amores oy</strong></div>
+              <div>Year<strong>2026</strong></div>
+            </div>
+          </div>
+
+          <!-- <h1>Kahvila Dois Amores — Website</h1> -->
+
+          <p>
+            Kahvila Dois Amores is a small café in Hämeenlinna, Finland,
+            specializing in gluten-free pastries and goods inspired by Brazilian
+            recipes and flavours.
+          </p>
+          <p>
+            My role in this project covered the entire design and implementation
+            process, from developing a new website concept and visual identity
+            to creating an online ordering request flow. I worked on wireframes,
+            high-fidelity mock-ups, and implemented the final designs directly
+            in WordPress, creating a website that the client could maintain
+            independently.
+          </p>
+
+          <h2>The Challenge</h2>
+          <p>
+            The client wanted to redesign the website to better communicate the
+            café's identity and build a closer relationship with its customers.
+            At the same time, they wanted to make the ordering process more
+            seamless without turning the website into a traditional e-commerce
+            system. This was important because the client wanted to have direct
+            communication with its customers. Customers may have specific
+            requests, while the owner needs to confirm details such as the
+            order, availability, and pickup information before finalizing it.
+          </p>
+          <p>
+            The website also needed to introduce the café's upcoming events and
+            workshops, while remaining simple enough for the client to manage
+            independently.
+          </p>
+
+          <div class="modal-gallery">
+            <div class="g-item">
+              <img
+                src="../img/DoisAmores-main-old.png"
+                alt="The main page before any design changes"
+                data-lightbox
+                data-caption="The main page before any design changes."
+              />
+            </div>
+            <div class="g-item">
+              <img
+                src="../img/DoisAmores-tilaukset-old.png"
+                alt="The orders page before any design changes"
+                data-lightbox
+                data-caption="The previous order's page."
+              />
+            </div>
+            <div class="g-item">
+              <img
+                src="../img/DoisAmores-tuotteemme-old.png"
+                alt="The products page before any design changes"
+                data-lightbox
+                data-caption="The previous products page."
+              />
+            </div>
+          </div>
+
+          <h2>The Process</h2>
+          <p>
+            I began with meetings with the client to understand their goals,
+            requirements, existing workflows, and vision for the café. These
+            conversations helped me understand the brand, its customers, and
+            what kind of ordering experience would work realistically for the
+            business.
+          </p>
+          <p>
+            I also gathered data from the café's social media analytics to
+            better understand its existing clientele. The data showed that a
+            significant portion of the café's customers was aged 45–64. Based on
+            this, I placed particular emphasis on clear
+            <strong>information architecture</strong>,
+            <strong>accessibility</strong>, <strong>readability</strong>, and a
+            <strong>straightforward user experience</strong>.
+          </p>
+          <p>
+            One of the key requirements was that orders submitted through the
+            website should not be treated as final purchases. The client wanted
+            to maintain a close relationship with customers and discuss the
+            details of each order directly before confirming it.
+          </p>
+          <p>
+            Rather than implementing a traditional online shop, I therefore
+            designed the ordering experience around requesting a quote. Because
+            each order required confirmation from the café owner, a traditional
+            checkout experience would have created the wrong expectation for
+            customers. I designed the flow around submitting an order request
+            instead, allowing the owner to confirm availability and details
+            before finalizing the order.
+          </p>
+
+          <h2>Designing the ordering experience</h2>
+          <p>From there, I moved into:</p>
+          <ul class="modal-list">
+            <li>
+              <strong>Concept &amp; brand direction</strong> – Developed a UI
+              kit that included colour palettes, imagery and typography choices
+              that could convey the café's Brazilian-meets-Finnish, gluten-free
+              identity.
+            </li>
+            <li>
+              <strong>Wireframes</strong> – Created the basic structure for the
+              reimagined website with emphasis on information architecture and
+              the ordering flow, keeping it simple enough for a small,
+              non-technical business to manage.
+            </li>
+            <li>
+              <strong>High-fidelity mock-ups</strong> – Refining the visual
+              design based on client feedback.
+            </li>
+            <li>
+              <strong>Implementation on WordPress</strong> – Building the
+              designs directly into a live, editable site the client could
+              maintain themselves.
+            </li>
+          </ul>
+
+          <div class="modal-gallery">
+            <div class="g-item">
+              <img
+                src="../img/simple-UI-kit-doisamores2.png"
+                alt="TEST"
+                data-lightbox
+                data-caption="Homepage hero section."
+              />
+            </div>
+            <div class="g-item">
+              <img
+                src="../img/DoisAmores-content-hierarchy.png"
+                alt="The website's planned information hierarchy"
+                data-lightbox
+                data-caption="The website's planned information hierarchy"
+              />
+            </div>
+            <div class="g-item">
+              <img
+                src="../img/Pages-Wireframe-DoisAmores4.png"
+                alt="wireframes"
+                data-lightbox
+                data-caption="Wireframes"
+              />
+            </div>
+          </div>
+
+          <h2>Outcome</h2>
+          <p>
+            The project resulted in a redesigned website with a clearer
+            structure, stronger visual identity, and a dedicated ordering
+            request flow. The website also introduced dedicated spaces for the
+            café's events, workshops, and future services, helping create a
+            foundation for the business to expand its digital presence.
+          </p>
+          <p>
+            While there were no quantitative metrics available to measure the
+            impact of the redesign, the final website provided the client with a
+            more cohesive digital presence and a website they could continue to
+            manage and update themselves.
+          </p>
+
+          <div class="modal-gallery">
+            <div class="g-item">
+              <img
+                src="../img/project-image-card3.png"
+                alt=""
+                data-lightbox
+                data-caption="The final homepage after the redesign."
+              />
+            </div>
+          </div>
+
+          <h2>Reflection</h2>
+          <p>
+            This project was particularly valuable because I worked across both
+            the UX/UI design and development sides of the project. Being
+            involved in the implementation helped me understand the practical
+            limitations of WordPress and adapt my designs accordingly rather
+            than treating development as a separate stage.
+          </p>
+          <p>
+            The project also required me to balance the client's limited
+            resources with their goals for the website. Instead of introducing a
+            complex ordering system, I designed a solution around their existing
+            workflow, allowing customers to submit requests while keeping the
+            final confirmation process personal.
+          </p>
+          <p>
+            Overall, I enjoyed collaborating closely with the client and
+            creating something that could have a positive impact on the local
+            community by helping promote a small business and making its
+            gluten-free offerings more accessible to potential customers.
+          </p>
+          <hr class="article-divider" />
+        </div>
+
+        <div class="connect-wrap" id="contact-article">
+          <a
+            class="btn-connect"
+            href="https://www.linkedin.com/in/catarina-kaucher-45a4b6298"
+            target="_blank"
+            rel="noopener"
+            ><span>Let's Connect</span> <i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+      </article>
+      <div class="lightbox-overlay" id="lightboxOverlay">
+        <button
+          class="lightbox-close"
+          id="lightboxClose"
+          aria-label="Close image"
+        >
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+        <figure class="lightbox-figure">
+          <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+          <figcaption
+            class="lightbox-caption"
+            id="lightboxCaption"
+          ></figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2026 Catarina Kaucher. All rights reserved.</p>
+      <div class="footer-socials">
+        <a
+          href="https://www.linkedin.com/in/catarina-kaucher-45a4b6298"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a
+          href="https://github.com/CatarinaK1"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile nav toggle
+      const navToggle = document.getElementById("navToggle");
+      const navList = document.getElementById("navList");
+      navToggle.addEventListener("click", () => {
+        const isOpen = navList.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", isOpen);
+      });
+      navList.querySelectorAll("a").forEach((a) =>
+        a.addEventListener("click", (e) => {
+          // Don't close the menu when tapping the dropdown toggle itself on mobile
+          if (e.target.closest(".dropdown-toggle")) return;
+          navList.classList.remove("open");
+          navToggle.setAttribute("aria-expanded", "false");
+        }),
+      );
+
+      // Projects dropdown — tap to expand on mobile
+      const dropdownParent = document.querySelector(".has-dropdown");
+      const dropdownToggle = document.querySelector(".dropdown-toggle");
+      dropdownToggle.addEventListener("click", (e) => {
+        if (window.matchMedia("(max-width:920px)").matches) {
+          e.preventDefault();
+          dropdownParent.classList.toggle("dropdown-open");
+        }
+      });
+
+      const lightboxOverlay = document.getElementById("lightboxOverlay");
+      const lightboxImg = document.getElementById("lightboxImg");
+      const lightboxClose = document.getElementById("lightboxClose");
+      let lastFocusedImg = null;
+
+      document.querySelectorAll("[data-lightbox]").forEach((img) => {
+        img.addEventListener("click", () => {
+          lastFocusedImg = img;
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          const caption = img.dataset.caption || "";
+          lightboxCaption.textContent = caption;
+          lightboxCaption.style.display = caption ? "block" : "none";
+          lightboxOverlay.classList.add("open");
+          document.body.style.overflow = "hidden";
+          lightboxClose.focus();
+        });
+      });
+
+      function closeLightbox() {
+        lightboxOverlay.classList.remove("open");
+        document.body.style.overflow = "";
+        lightboxImg.src = "";
+        if (lastFocusedImg) lastFocusedImg.focus();
+      }
+
+      lightboxClose.addEventListener("click", closeLightbox);
+      lightboxOverlay.addEventListener("click", (e) => {
+        if (e.target === lightboxOverlay) closeLightbox(); // only closes on backdrop click, not the image itself
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && lightboxOverlay.classList.contains("open"))
+          closeLightbox();
+      });
+
+      document.querySelectorAll(".modal-gallery").forEach((gallery) => {
+        if (gallery.querySelectorAll(".g-item").length === 1) {
+          gallery.classList.add("single-image");
+        }
+      });
+    </script>
+  </body>
 </html>

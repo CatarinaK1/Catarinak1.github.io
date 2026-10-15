@@ -1,11 +1,373 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashtera Blog | Catarina Kaucher</title>
+    <meta
+      name="description"
+      content="UX/UI design for the DASHTERA blog — from wireframes through high-fidelity mockups and implementation."
+    />
+    <link rel="icon" type="image/x-icon" href="../img/CK.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Josefin+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-inner">
+        <a class="logo" href="../index.html">CK</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav>
+          <ul id="navList">
+            <li><a href="../index.html#about">About</a></li>
+            <li class="has-dropdown">
+              <a href="../index.html#projects" class="dropdown-toggle"
+                >Projects <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="dashtera-blog.html">Dashtera — Blog Design</a></li>
+                <li><a href="doisamores.html">Kahvila Dois Amores</a></li>
+              </ul>
+            </li>
+            <li><a href="../index.html#tools">Tools</a></li>
+            <li><a href="../index.html#testimonials">Testimonials</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <div class="case-hero-wrap">
+          <div class="hero-wave-bg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path
+                fill="rgb(254,220,232)"
+                fill-opacity="0.3"
+                d="M0,256L48,240C96,224,192,192,288,202.7C384,213,480,267,576,256C672,245,768,171,864,154.7C960,139,1056,181,1152,181.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="article-header wrap">
+            <h1>Dashtera Blog</h1>
+          </div>
+
+          <div class="case-hero">
+            <picture>
+              <source
+                media="(max-width: 430px)"
+                srcset="../img/dashtera-blog-mobile.png"
+              />
+              <img
+                src="../img/dashtera-hero-image-wrapper2.png"
+                alt="Dashtera blog website preview"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="case-content">
+          <div class="modal-meta-row">
+            <div class="modal-tags">
+              <span class="pill">UI/UX Design</span>
+              <span class="pill">Responsive Web Design</span>
+            </div>
+            <div class="modal-side">
+              <div>Client<strong>LightningChart ltd</strong></div>
+              <div>Year<strong>2025</strong></div>
+            </div>
+          </div>
+
+          <p>
+            DASHTERA is a platform that helps users work with and visualize data
+            through interactive data visualization tools.
+          </p>
+          <p>
+            I was responsible for developing the UX/UI design for the DASHTERA
+            blog, from the initial wireframes through the high-fidelity mockups
+            and implementation. I worked closely with a senior designer
+            throughout the design process, incorporating feedback and iterating
+            on the concepts. I also worked with the developer during
+            implementation, overseeing the design, identifying bugs, and
+            suggesting improvements where needed.
+          </p>
+
+          <h2>The Challenge</h2>
+          <p>
+            As the product evolved, the team needed a dedicated blog where users
+            could discover content related to DASHTERA. The goal was to create a
+            clearer and more intuitive way for users to discover and explore
+            DASHTERA content.
+          </p>
+          <p>
+            The blog needed to accommodate different types of content, from
+            tutorials and product updates to use cases and announcements, while
+            making it easy for users to search, filter, and find related
+            articles. The design also needed to provide a structure that could
+            scale as more content was added over time.
+          </p>
+
+          <h2>The Process</h2>
+          <p>
+            I began by researching the content structure and exploring different
+            ways the blog could organize and present its articles. From there, I
+            created several wireframe concepts and discussed them with the team
+            and senior designer. Based on the feedback, I iterated on the
+            layouts and refined the overall structure before moving into
+            high-fidelity designs. Once the basic wireframe was approved, I
+            moved on to developing the visual design and expanding the different
+            sections of the blog.
+          </p>
+
+          <h2>Structuring the blog</h2>
+          <p>
+            The initial concept was based around two main pages: a blog homepage
+            and an individual article page.
+          </p>
+          <p>
+            The homepage was designed to give users an overview of the latest
+            and most relevant content. It included a hero section featuring the
+            latest article, followed by the three most popular articles. Below
+            this, users could search and filter the available content by
+            category.
+          </p>
+          <p>
+            The second page was the individual article view, where users could
+            read the full article, share it, and discover related content at the
+            bottom of the page.
+          </p>
+
+          <div class="modal-gallery">
+            <div class="g-item">
+              <img
+                src="../img/Dashtera-blog-wireframe.png"
+                alt="Early wireframe concept for the Dashtera blog homepage"
+                data-lightbox
+                data-caption="Blog homepage wireframe — hero article and popular articles."
+              />
+            </div>
+          </div>
+
+          <p>
+            An interesting part of the project came during implementation, when
+            we discovered some technical constraints with the original
+            navigation model.
+          </p>
+          <p>
+            The initial idea was to keep all article discovery and filtering on
+            the main blog page. However, this created a problem when users
+            navigated to a category from an article page. We needed a way for
+            users to explore that category independently while still being able
+            to search, filter, switch between categories, and return to the main
+            blog.
+          </p>
+          <div class="modal-gallery">
+            <div class="g-item">
+              <img
+                src="../img/Dashtera-blog-main-page-flow.png"
+                alt="Early wireframe concept for the Dashtera blog homepage"
+                data-lightbox
+                data-caption="Blog homepage wireframe — hero article and popular articles."
+              />
+            </div>
+          </div>
+          <p>
+            To solve this, I adapted the original information architecture and
+            introduced a third page dedicated to individual categories. This
+            allowed users to explore a specific content area in more depth while
+            keeping the navigation between the blog, categories, and individual
+            articles clear and consistent.
+          </p>
+
+          <h2>Implementation &amp; QA</h2>
+          <p>
+            One of the reasons this project was particularly valuable for me was
+            that my role extended beyond the design phase.
+          </p>
+          <p>
+            I was involved in overseeing the implementation with the developer,
+            reviewing the work as it was built, reporting bugs, and identifying
+            areas where the implementation could be improved. This gave me the
+            opportunity to see how design decisions translated into a real
+            product and to adapt the design when technical limitations or
+            implementation issues emerged.
+          </p>
+
+          <div class="modal-gallery">
+            <div class="g-item">
+              <img
+                src="../img/Dashtera-blog-mockup.png"
+                alt=""
+                data-lightbox
+                data-caption="The final homepage after the redesign."
+              />
+            </div>
+          </div>
+
+          <h2>Outcome</h2>
+          <p>
+            The final blog design was well received by the CEO and stakeholders
+            and was successfully moved into implementation. The project resulted
+            in a more structured experience for discovering DASHTERA content,
+            with dedicated spaces for the main blog, individual articles, and
+            category exploration.
+          </p>
+
+          <h2>Reflection</h2>
+          <p>
+            This project taught me that designing a product is not always a
+            linear process. Some of the most important design decisions happened
+            after the initial concepts had already been created, when we
+            encountered technical constraints during implementation.
+          </p>
+          <p>
+            It also gave me more experience thinking about information
+            architecture and content discovery, particularly how different pages
+            and navigation patterns can work together to help users find related
+            content.
+          </p>
+          <p>
+            Working closely with a senior designer was another valuable part of
+            the project. Their feedback helped me improve my approach to layout,
+            hierarchy, and visual design, while working directly with a
+            developer gave me a better understanding of how design decisions
+            need to adapt to technical realities.
+          </p>
+          <hr class="article-divider" />
+        </div>
+
+        <div class="connect-wrap" id="contact-article">
+          <a
+            class="btn-connect"
+            href="https://www.linkedin.com/in/catarina-kaucher-45a4b6298"
+            target="_blank"
+            rel="noopener"
+            ><span>Let's Connect</span> <i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+      </article>
+      <div class="lightbox-overlay" id="lightboxOverlay">
+        <button
+          class="lightbox-close"
+          id="lightboxClose"
+          aria-label="Close image"
+        >
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+        <figure class="lightbox-figure">
+          <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+          <figcaption
+            class="lightbox-caption"
+            id="lightboxCaption"
+          ></figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2026 Catarina Kaucher. All rights reserved.</p>
+      <div class="footer-socials">
+        <a
+          href="https://www.linkedin.com/in/catarina-kaucher-45a4b6298"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a
+          href="https://github.com/CatarinaK1"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile nav toggle
+      const navToggle = document.getElementById("navToggle");
+      const navList = document.getElementById("navList");
+      navToggle.addEventListener("click", () => {
+        const isOpen = navList.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", isOpen);
+      });
+      navList.querySelectorAll("a").forEach((a) =>
+        a.addEventListener("click", (e) => {
+          // Don't close the menu when tapping the dropdown toggle itself on mobile
+          if (e.target.closest(".dropdown-toggle")) return;
+          navList.classList.remove("open");
+          navToggle.setAttribute("aria-expanded", "false");
+        }),
+      );
+
+      // Projects dropdown — tap to expand on mobile
+      const dropdownParent = document.querySelector(".has-dropdown");
+      const dropdownToggle = document.querySelector(".dropdown-toggle");
+      dropdownToggle.addEventListener("click", (e) => {
+        if (window.matchMedia("(max-width:920px)").matches) {
+          e.preventDefault();
+          dropdownParent.classList.toggle("dropdown-open");
+        }
+      });
+
+      const lightboxOverlay = document.getElementById("lightboxOverlay");
+      const lightboxImg = document.getElementById("lightboxImg");
+      const lightboxClose = document.getElementById("lightboxClose");
+      let lastFocusedImg = null;
+
+      document.querySelectorAll("[data-lightbox]").forEach((img) => {
+        img.addEventListener("click", () => {
+          lastFocusedImg = img;
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          const caption = img.dataset.caption || "";
+          lightboxCaption.textContent = caption;
+          lightboxCaption.style.display = caption ? "block" : "none";
+          lightboxOverlay.classList.add("open");
+          document.body.style.overflow = "hidden";
+          lightboxClose.focus();
+        });
+      });
+
+      function closeLightbox() {
+        lightboxOverlay.classList.remove("open");
+        document.body.style.overflow = "";
+        lightboxImg.src = "";
+        if (lastFocusedImg) lastFocusedImg.focus();
+      }
+
+      lightboxClose.addEventListener("click", closeLightbox);
+      lightboxOverlay.addEventListener("click", (e) => {
+        if (e.target === lightboxOverlay) closeLightbox(); // only closes on backdrop click, not the image itself
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && lightboxOverlay.classList.contains("open"))
+          closeLightbox();
+      });
+
+      document.querySelectorAll(".modal-gallery").forEach((gallery) => {
+        if (gallery.querySelectorAll(".g-item").length === 1) {
+          gallery.classList.add("single-image");
+        }
+      });
+    </script>
+  </body>
 </html>
